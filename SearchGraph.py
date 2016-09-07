@@ -48,6 +48,24 @@ def read_graph(filename):
 ######################################
 
 # TBD
+def iterativeDFS(source, destination, maxDepth, edges):
+    for limit in range(maxDepth):
+        if depthLimitSearch(source, destination, limit, edges):
+            return True
+    return False
+
+def depthLimitSearch(source, destination, limit, edges):
+    if source == destination:
+        return True
+
+    if limit <= 0:
+        return False
+
+    for i in edges[source]:
+        if depthLimitSearch(i, destination, limit-1, edges):
+            return True
+    return False
+
 
 
 
@@ -81,6 +99,8 @@ def main():
             print("Start location is not in the graph.")
         else:
             print('')
+            b = iterativeDFS(start, goal, 10, edges)
+            print(b)
             print('-- States Visited ----------------')
             print('TBD')  # program will need to show the search tree.
             print('')
