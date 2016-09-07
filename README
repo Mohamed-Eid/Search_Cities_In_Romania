@@ -1,0 +1,25 @@
+Foundations of Intelligent Systems
+Assignment 1 Programming Question
+(R. Zanibbi)
+----------------------------------------------------------------------------------
+
+Files in this directory:
+
+SearchGraph.py:  The file to modify for the assignment.
+romania:         Text file defining adjacent cities in the map of Romania.
+test:            Automated test script. Runs SearchGraph.py with predefined arguments.
+                 You should modify this script when testing your program.
+
+Making 'test' executable on the CS computers (i.e. in Unix/Linux):
+
+  1. Go to the directory containing the code for Assignment 1.
+  2. Issue the following command:
+
+        chmod u+x test
+     
+     This will make 'test' executable for you, the 'u'ser. 
+	 
+     Running this command tells Linux to look for the "#!/bin/bash" command at
+     the top of the file, which runs 'bash' shell and then treats the rest of
+     the file as input to the shell, and then exits when this ‘shell script’ ends.
+
