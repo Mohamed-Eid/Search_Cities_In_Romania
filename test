@@ -1,3 +1,5 @@
 #!/bin/bash
 
 python3 SearchGraph.py romania Arad Bucharest
+python3 SearchGraph.py romania Iasi Timisoara
+python3 SearchGraph.py romania Arad Hello
